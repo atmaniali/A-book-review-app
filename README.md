@@ -36,3 +36,58 @@ This app would be a great addition to your portfolio because it would demonstrat
     - GET: Get a review by its ID.
     - PUT: Update a review.
     - DELETE: Delete a review.
+
+
+### Example of data for test
+
+#### User data
+
+{
+    "id": 1,
+    "username": "johndoe",
+    "email": "johndoe@example.com",
+    "password": "password"
+}
+
+{
+    "id": 2,
+    "username": "janedoe",
+    "email": "janedoe@example.com",
+    "password": "password"
+}
+
+##### Book data
+
+{
+    "id": 1,
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "genre": "Sci-Fi",
+    "rating": 4.5
+}
+
+{
+    "id": 2,
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "genre": "Comedy",
+    "rating": 5.0
+}
+
+#### Review data
+
+{
+    "id": 1,
+    "user": 1,
+    "book": 1,
+    "rating": 5,
+    "review text": "This book was amazing! I couldn't put it down."
+}
+
+{
+    "id": 2,
+    "user": 2,
+    "book": 2,
+    "rating": 4,
+    "review text": "This book was very funny! I loved the wit and humor."
+}
