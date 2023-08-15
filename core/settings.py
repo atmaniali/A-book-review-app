@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # localy
     'book',
+    'users',
     # 3rd party
     'rest_framework',
 ]
@@ -133,6 +134,6 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
-       'rest_framework.permissions.AllowAny',
+       'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ]
 }
